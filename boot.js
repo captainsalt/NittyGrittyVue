@@ -8,5 +8,7 @@ new Vue({
     el: '#app',
     template: '<App/>',
     components: { App },
-    render: h => h(App)
+    render: function(h) {
+        return h(App);
+    }
 });
