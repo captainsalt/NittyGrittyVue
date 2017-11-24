@@ -7,15 +7,11 @@ module.exports = {
         main: "./boot.js"
     },
     output: {
-        filename: "main.bundle.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
     },
     module: {
         rules: [
-            {
-                test: /\.tsx?$/,
-                loader: "ts-loader"
-            },
             {
                 test: /\.vue$/,
                 loader: "vue-loader",
