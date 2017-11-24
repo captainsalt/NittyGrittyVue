@@ -1,3 +1,3 @@
 # NittyGrittyVue
 
-A Vue and Webpack project built from scratch
+A small project to further my knowledge in Webpack and Vue.js 
