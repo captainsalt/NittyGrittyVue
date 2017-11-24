@@ -1,5 +1,5 @@
 import Vue from "vue";
-import App from "./app.vue"
+import App from "./app.vue.html"
 import Counter from "./components/counter"
 
 Vue.component("counter", Counter);
