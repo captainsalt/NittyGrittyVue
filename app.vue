@@ -1,7 +1,7 @@
 <template>
     <div>
         Hello from App.Vue
-        <simple-component></simple-component>
+        <counter></counter>
     </div>
 </template>
 

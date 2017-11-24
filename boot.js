@@ -1,8 +1,8 @@
 import Vue from "vue";
 import App from "./app.vue"
-import Counter from "./components/simplecomponent.vue"
+import Counter from "./components/counter"
 
-Vue.component("simpleComponent", Counter);
+Vue.component("counter", Counter);
 
 new Vue({
     el: '#app',
