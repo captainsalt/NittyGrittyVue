@@ -26,8 +26,9 @@ module.exports = {
                 loader: "vue-loader",
                 options: {
                     loaders: {
-                        js: "ts-loader",
-                        sass: ["vue-style-loader", "css-loader", "sass-loader"]
+                        js: ["babel-loader", "ts-loader"],
+                        sass: ["vue-style-loader", "css-loader", "sass-loader"],
+                        exclude: [path.resolve(__dirname, "node_modules")],
                     }
                 }
             },
@@ -36,6 +37,11 @@ module.exports = {
                 loader: (isProduction) ?
                     ExtractTextPlugin.extract(["css-loader", "sass-loader"]) : //extract for production
                     ["style-loader", "css-loader", "sass-loader"] //inline styline for dev
+            },
+            {
+                test: /\.js$/,
+                loader: "babel-loader",
+                exclude: [path.resolve(__dirname, "node_modules")],
             }
         ]
     },
