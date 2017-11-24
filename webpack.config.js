@@ -22,7 +22,6 @@ module.exports = {
                 options: {
                     loaders: {
                         js: "ts-loader",
-                        // ts: "ts-loader",
                         sass: ["vue-style-loader", "css-loader", "sass-loader"]
                     }
                 }
